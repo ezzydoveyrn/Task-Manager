@@ -20,7 +20,7 @@ function createTime(){
     }
   }
   function checkHours() {
-    if(hours < 12){
+    if(hours < 13){
       return hours;
     }else{
       return hours - 12;
