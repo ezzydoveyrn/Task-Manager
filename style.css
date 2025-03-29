@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1{
+  background: linear-gradient(rgb(255, 77, 0), hsl(131, 77%, 40%));
+  padding: 20px;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+.taskContainer{
+  width: 350px;
+  height: 500px;
+  border: 2px solid rgb(33, 49, 9);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(46, 164, 46);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.taskContainer h2{
+  text-align: center;
+  color: rgb(9, 31, 9);
+}
+.taskContainer .input{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.taskContainer .input input{
+  width: 280px;
+  height: 30px;
+  border: 2px solid greenyellow;
+  box-shadow: 0 0 10px green;
+  outline:greenyellow;
+  padding: 0px 10px;
+  font-size: 16.5px;
+}
+.taskContainer .input button{
+  width: 50px;
+  height: 30px;
+  background-color: hsl(84, 100%, 59%);
+  border-radius: 5px;
+  border: 2px solid greenyellow;
+  cursor: pointer;
+  box-shadow: 0 0 10px green;
+}
+.taskContainer .input button:hover{
+  background-color: hsl(84, 100%, 79%);
+}
+.taskContainer .input button:active{
+  background-color: hsl(84, 100%, 39%);
+}
+.taskContainer hr{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: green;
+  border: 1px solid green;
+  box-shadow: 0 0 10px greenyellow;
+}
+.displayTaskContainer{
+  width: 1fr;
+  height: 100%;
+  background-color: rgba(27, 150, 227, 0.064);
+  overflow-y: auto;
+}
+.displayTaskContainer .taskCont{
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.displayTaskContainer .taskCont:hover{
+  background-color: rgba(0, 0, 0, 0.265);
+}
+.displayTaskContainer .taskCont input{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.displayTaskContainer .taskCont button{
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  background-color: rgb(205, 35, 35);
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.displayTaskContainer .taskCont p{
+  flex-grow: 1;
+  width: 200px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 5px;
+}
